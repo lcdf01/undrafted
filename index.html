@@ -57,9 +57,14 @@ nav.top .btn{padding:7px 14px;font-size:14px}
 .menu{display:none;margin-left:auto;background:none;border:1px solid rgba(255,255,255,.4);color:var(--on-deep);border-radius:6px;padding:6px 10px;font:inherit;font-size:14px}
 
 /* hero: corsie della vasca */
-header.hero{background:var(--deep);color:var(--on-deep);position:relative;overflow:hidden;padding-block:72px 64px}
+header.hero{background:var(--deep);color:var(--on-deep);position:relative;overflow:hidden;padding-block:96px 80px;text-shadow:0 1px 12px rgba(0,0,0,.35)}
 header.hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 78px,rgba(255,255,255,.06) 78px 80px);pointer-events:none}
-header.hero .wrap{position:relative}
+header.hero .wrap{position:relative;z-index:2}
+header.hero::before{z-index:1}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.6s ease}
+.hero-bg img.on{opacity:1}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,40,47,.88) 0%,rgba(7,40,47,.62) 55%,rgba(7,40,47,.35) 100%)}
 header.hero .kicker{color:var(--sun)}
 .hero h1{font-size:clamp(64px,15vw,168px);font-weight:900;line-height:.82}
 .hero h1 em{font-style:normal;color:var(--sun);display:block}
@@ -127,8 +132,8 @@ section:not(.alt) .card{background:var(--surface)}
 .marquee-track{display:flex;width:max-content;animation:scroll 28s linear infinite}
 .marquee:hover .marquee-track{animation-play-state:paused}
 .logos{display:flex;gap:18px;padding-right:18px}
-.logo{display:grid;place-items:center;width:180px;height:110px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px}
-.logo img{max-width:100%;max-height:100%;object-fit:contain}
+.logo{display:block;width:200px;height:120px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 16px}
+.logo img{display:block;width:100%;height:100%;object-fit:contain}
 @keyframes scroll{to{transform:translateX(-50%)}}
 
 /* sponsor */
@@ -188,6 +193,7 @@ footer a{opacity:.9}
 </nav>
 
 <header class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true"><img src="img/2026/foto-01.jpg" alt="" class="on"><img src="img/2026/foto-04.jpg" alt=""><img src="img/2026/foto-05.jpg" alt=""><img src="img/2026/foto-06.jpg" alt=""><img src="img/2026/foto-02.jpg" alt=""><img src="img/2025/foto-01.jpg" alt=""><img src="img/2025/foto-05.jpg" alt=""><img src="img/2025/foto-08.jpg" alt=""></div>
   <div class="wrap">
     <p class="kicker">Terza edizione · Torneo di basket 3v3</p>
     <h1>WLA Cup <em>2027</em></h1>
@@ -228,7 +234,7 @@ footer a{opacity:.9}
       <li><strong>1W1:</strong> una volta a partita il capitano chiama la sfida uno contro uno, vale 3 punti.</li>
       <li><strong>Palla contesa:</strong> niente possesso alternato, decide chi finisce prima una birra piccola.</li>
     </ul>
-    <p style="margin-top:20px"><a href="#contatti">Regolamento completo</a> <span class="tbd">pagina o PDF da collegare</span></p>
+    <p style="margin-top:20px"><a href="https://drive.google.com/file/d/1bDFdglPlYdbzx42nmn8Edi-oRGehAQQ-/view?usp=drive_link" target="_blank" rel="noopener">Regolamento completo (PDF)</a></p>
   </div>
 </section>
 
@@ -297,28 +303,21 @@ footer a{opacity:.9}
     <h3 class="car-title">Albo d’oro</h3>
     <div class="carousel" data-carousel aria-label="Foto dei vincitori">
       <div class="track">
-        <figure class="slide placeholder"><div class="ph">Foto dei vincitori 2026 <span class="tbd">da aggiungere</span></div><figcaption><b>2026</b> · I bambini di Bob Marley</figcaption></figure>
-        <figure class="slide"><img src="img/vincitori/vincitori-2025-01.jpg" alt="Quattro giocatori sollevano la coppa e i premi sotto il gazebo" loading="lazy"><figcaption><b>2025</b> · Prima edizione <span class="tbd">squadra da confermare</span></figcaption></figure>
-        <figure class="slide"><img src="img/vincitori/vincitori-2025-02.jpg" alt="Quattro giocatori in posa con la coppa, i buoni e i premi degli sponsor" loading="lazy"><figcaption><b>2025</b> · Premiazione</figcaption></figure>
+        <figure class="slide"><img src="img/vincitori/vincitori-2026-01.jpg" alt="Premiazione WLA Cup 2026: squadra esulta con coppa e premi insieme agli organizzatori" loading="lazy"><figcaption><b>2026</b> · Coppa <span class="tbd">I bambini di Bob Marley? da confermare</span></figcaption></figure>
+        <figure class="slide"><img src="img/vincitori/vincitori-2026-02.jpg" alt="Premiazione WLA Cup 2026: quattro giocatori in posa con i premi degli sponsor" loading="lazy"><figcaption><b>2026</b> · Premiazione <span class="tbd">categoria da confermare</span></figcaption></figure>
+        <figure class="slide"><img src="img/vincitori/vincitori-2026-03.jpg" alt="Premiazione WLA Cup 2026: quattro ragazzi con panettone e premi" loading="lazy"><figcaption><b>2026</b> · Premiazione <span class="tbd">categoria da confermare</span></figcaption></figure>
+        <figure class="slide"><img src="img/vincitori/vincitori-2026-04.jpg" alt="Premiazione WLA Cup 2026: giocatore con una piccola coppa dorata e una confezione regalo" loading="lazy"><figcaption><b>2026</b> · Premio individuale <span class="tbd">MVP?</span></figcaption></figure>
+        <figure class="slide"><img src="img/vincitori/vincitori-2026-05.jpg" alt="Premiazione WLA Cup 2026: una giocatrice e un giocatore ricevono i premi" loading="lazy"><figcaption><b>2026</b> · Premiazione <span class="tbd">categoria da confermare</span></figcaption></figure>
+        <figure class="slide"><img src="img/vincitori/vincitori-2025-01.jpg" alt="Premiazione WLA Cup 2025: quattro giocatori sollevano la coppa e i premi sotto il gazebo" loading="lazy"><figcaption><b>2025</b> · Coppa <span class="tbd">squadra da confermare</span></figcaption></figure>
+        <figure class="slide"><img src="img/vincitori/vincitori-2025-02.jpg" alt="Premiazione WLA Cup 2025: quattro giocatori in posa con la coppa, i buoni e i premi degli sponsor" loading="lazy"><figcaption><b>2025</b> · Coppa</figcaption></figure>
+        <figure class="slide"><img src="img/vincitori/vincitori-2025-03.jpg" alt="Premiazione WLA Cup 2025: squadra Team Fatecivederequalcosa in posa sul campo con i premi" loading="lazy"><figcaption><b>2025</b> · Team Fatecivederequalcosa <span class="tbd">categoria da confermare</span></figcaption></figure>
+        <figure class="slide"><img src="img/vincitori/vincitori-2025-04.jpg" alt="Premiazione WLA Cup 2025: squadra Team Fatecivederequalcosa sotto il gazebo con i premi" loading="lazy"><figcaption><b>2025</b> · Team Fatecivederequalcosa</figcaption></figure>
+        <figure class="slide"><img src="img/vincitori/vincitori-2025-05.jpg" alt="Premiazione WLA Cup 2025: tre ragazzi sorridenti con panettone e premi" loading="lazy"><figcaption><b>2025</b> · Premiazione <span class="tbd">Coppa Chiosco?</span></figcaption></figure>
+        <figure class="slide"><img src="img/vincitori/vincitori-2025-06.jpg" alt="Premiazione WLA Cup 2025: giocatore con un premio accanto al presentatore" loading="lazy"><figcaption><b>2025</b> · Premio individuale <span class="tbd">MVP?</span></figcaption></figure>
       </div>
       <div class="car-nav"><button type="button" data-prev aria-label="Foto precedente">‹</button><button type="button" data-next aria-label="Foto successiva">›</button></div>
     </div>
 
-    <h3 class="car-title">La giornata</h3>
-    <div class="carousel" data-carousel aria-label="Foto delle edizioni passate">
-      <div class="track">
-        <figure class="slide"><img src="img/2025/foto-01.jpg" alt="Tiro in elevazione con le montagne sullo sfondo" loading="lazy"></figure>
-        <figure class="slide"><img src="img/2025/foto-02.jpg" alt="Azione sotto canestro con difensore in salto e pubblico" loading="lazy"></figure>
-        <figure class="slide"><img src="img/2025/foto-03.jpg" alt="Giocatori e amici a bordo campo che ridono" loading="lazy"></figure>
-        <figure class="slide"><img src="img/2025/foto-04.jpg" alt="Squadre in attesa sedute in fila sotto i gazebo" loading="lazy"></figure>
-        <figure class="slide"><img src="img/2025/foto-05.jpg" alt="Tiro in sospensione con il pallone in volo" loading="lazy"></figure>
-        <figure class="slide"><img src="img/2025/foto-06.jpg" alt="Uno contro uno in post basso sul campo blu" loading="lazy"></figure>
-        <figure class="slide"><img src="img/2025/foto-07.jpg" alt="Giocatore in volo verso il canestro per un appoggio" loading="lazy"></figure>
-        <figure class="slide"><img src="img/2025/foto-08.jpg" alt="Giocatore al tiro davanti a un folto pubblico" loading="lazy"></figure>
-      </div>
-      <div class="car-nav"><button type="button" data-prev aria-label="Foto precedente">‹</button><button type="button" data-next aria-label="Foto successiva">›</button></div>
-    </div>
-    <p style="color:var(--soft);font-size:14px;margin-top:8px">Foto della prima edizione (2025). <span class="tbd">aggiungere le foto 2026</span></p>
 
     <h3 class="car-title">Maglie e shooting</h3>
     <div class="carousel tall" data-carousel aria-label="Foto dello shooting con le maglie">
@@ -343,7 +342,7 @@ footer a{opacity:.9}
         <p><span class="tbd" style="color:#1B1400">Apertura iscrizioni: marzo 2027</span></p>
       </div>
       <div class="cta">
-        <a class="btn" href="#" aria-disabled="true">Modulo d’iscrizione</a>
+        <a class="btn" href="https://form.jotform.com/251352451014343" target="_blank" rel="noopener">Modulo d’iscrizione</a>
         <a class="btn ghost" href="https://www.paypal.me/WLACUP" target="_blank" rel="noopener">Paga con PayPal</a>
       </div>
     </div>
@@ -421,12 +420,21 @@ footer a{opacity:.9}
   tick(); setInterval(tick,30000);
   var nav=document.getElementById('nav'),btn=document.getElementById('menu');
   btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o)});
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   document.querySelectorAll('[data-carousel]').forEach(function(c){
     var t=c.querySelector('.track');
     function step(){var s=t.querySelector('.slide');return s?s.getBoundingClientRect().width+14:300}
     c.querySelector('[data-prev]').addEventListener('click',function(){t.scrollBy({left:-step()})});
-    c.querySelector('[data-next]').addEventListener('click',function(){t.scrollBy({left:step()})});
+    function next(){ if(t.scrollLeft+t.clientWidth>=t.scrollWidth-4){t.scrollTo({left:0})}else{t.scrollBy({left:step()})} }
+    c.querySelector('[data-next]').addEventListener('click',next);
+    var paused=false;
+    ['mouseenter','touchstart','focusin'].forEach(function(e){c.addEventListener(e,function(){paused=true},{passive:true})});
+    ['mouseleave','focusout'].forEach(function(e){c.addEventListener(e,function(){paused=false})});
+    c.addEventListener('touchend',function(){setTimeout(function(){paused=false},4000)},{passive:true});
+    if(!reduce) setInterval(function(){ if(!paused && !document.hidden) next(); },3500);
   });
+  var bgs=document.querySelectorAll('.hero-bg img'),bi=0;
+  if(bgs.length>1 && !reduce) setInterval(function(){ bgs[bi].classList.remove('on'); bi=(bi+1)%bgs.length; bgs[bi].classList.add('on'); },5000);
   document.querySelectorAll('#menu-list a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');btn.setAttribute('aria-expanded','false')})});
 })();
 </script>
