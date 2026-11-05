@@ -6,7 +6,7 @@ Le parti evidenziate in giallo (classe `tbd`) e la fascia «Bozza del sito» in 
 ## Pubblicarlo con GitHub Pages (gratis)
 
 1. Crea un account su github.com (o usa il tuo) e un repository pubblico, ad esempio `wlacup`.
-2. Carica `index.html` (pulsante «Add file → Upload files»).
+2. Carica `index.html`, `wla.html`, `privacy.html` e le cartelle `css`, `js`, `img` (pulsante «Add file → Upload files»).
 3. Settings → Pages → Source: «Deploy from a branch», branch `main`, cartella `/ (root)` → Save.
    Dopo un minuto il sito è online su `https://<tuo-utente>.github.io/wlacup/`.
 
