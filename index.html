@@ -3,173 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>WLA Cup 2027</title>
+<title>UNDRAFTED · Circuito 3v3</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="WLA Cup 2027, terza edizione del torneo di basket 3v3 al WLA: 16 squadre, piscina, chioschi e Coppa Chiosco. Sabato 12 giugno 2027.">
-<meta property="og:title" content="WLA Cup 2027 · Torneo 3v3">
-<meta property="og:description" content="Terza edizione del torneo 3v3 al WLA: 16 squadre, piscina, chioschi e Coppa Chiosco.">
+<meta name="description" content="UNDRAFTED, il circuito amatoriale di basket 3v3 nato nel 2025: più tappe, 16 squadre per tappa, Bravi e Belli, Coppa Chiosco. Prima tappa 2027 al WLA il 12 giugno.">
+<meta property="og:title" content="UNDRAFTED · Circuito 3v3">
+<meta property="og:description" content="Il circuito amatoriale di basket 3v3 nato nel 2025. Tappe 2027 in arrivo.">
 <meta name="theme-color" content="#0A4B57">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Work+Sans:wght@400;500;600&display=swap">
-<style>
-/* Layout: sito a pagina singola, sezioni a tutta larghezza come corsie di una vasca; contenuto max 1080px */
-:root{
-  --bg:#F4F8F8; --surface:#FFFFFF; --ink:#0F2A33; --soft:#4F6670; --line:#D5E2E4;
-  --pool:#0E6E7E; --deep:#0A4B57; --sun:#F2B705; --on-deep:#F1FAFB;
-  --display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
-  --body:"Work Sans",-apple-system,"Segoe UI",sans-serif;
-}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#0B1A1F; --surface:#112830; --ink:#E6F1F2; --soft:#9DB4BA; --line:#21414A;
-  --pool:#2BA3B5; --deep:#07323B; --sun:#F5C842; --on-deep:#F1FAFB; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#0B1A1F; --surface:#112830; --ink:#E6F1F2; --soft:#9DB4BA; --line:#21414A;
-  --pool:#2BA3B5; --deep:#07323B; --sun:#F5C842; --on-deep:#F1FAFB; color-scheme:dark}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:64px}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55}
-a{color:inherit}
-.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-h1,h2,h3{font-family:var(--display);line-height:.95;letter-spacing:.01em;text-wrap:balance;margin:0}
-h2{font-size:clamp(38px,6vw,56px);font-weight:800;margin-bottom:18px}
-h3{font-size:26px;font-weight:700;margin-bottom:6px}
-.kicker{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--pool);font-weight:600;margin:0 0 8px}
-.lead{font-size:18px;color:var(--soft);max-width:62ch;margin:0 0 28px}
-section{padding-block:72px}
-section.alt{background:var(--surface)}
-.draft{background:var(--sun);color:#1B1400;font-size:13px;text-align:center;padding:6px 16px}
-.tbd{background:rgba(242,183,5,.25);border-radius:4px;padding:0 4px}
-
-/* barra di navigazione */
-nav.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--deep);color:var(--on-deep)}
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--deep)}
-nav.top .wrap{display:flex;align-items:center;gap:20px;height:56px}
-.brand{font-family:var(--display);font-weight:900;font-size:24px;text-decoration:none;letter-spacing:.03em}
-.brand span{color:var(--sun)}
-nav.top ul{display:flex;gap:18px;list-style:none;margin:0 0 0 auto;padding:0;font-size:14px}
-nav.top ul a{text-decoration:none;opacity:.85}
-nav.top ul a:hover{opacity:1;text-decoration:underline;text-underline-offset:4px}
-.btn{display:inline-block;font-family:var(--body);font-weight:600;font-size:15px;text-decoration:none;padding:12px 22px;border-radius:8px;background:var(--sun);color:#1B1400;border:2px solid var(--sun)}
-.btn.ghost{background:transparent;color:inherit;border-color:currentColor}
-.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
-nav.top .btn{padding:7px 14px;font-size:14px}
-.menu{display:none;margin-left:auto;background:none;border:1px solid rgba(255,255,255,.4);color:var(--on-deep);border-radius:6px;padding:6px 10px;font:inherit;font-size:14px}
-
-/* hero: corsie della vasca */
-header.hero{background:var(--deep);color:var(--on-deep);position:relative;overflow:hidden;padding-block:96px 80px;text-shadow:0 1px 12px rgba(0,0,0,.35)}
-header.hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 78px,rgba(255,255,255,.06) 78px 80px);pointer-events:none}
-header.hero .wrap{position:relative;z-index:2}
-header.hero::before{z-index:1}
-.hero-bg{position:absolute;inset:0;z-index:0}
-.hero-bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.6s ease}
-.hero-bg img.on{opacity:1}
-.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,40,47,.88) 0%,rgba(7,40,47,.62) 55%,rgba(7,40,47,.35) 100%)}
-header.hero .kicker{color:var(--sun)}
-.hero h1{font-size:clamp(64px,15vw,168px);font-weight:900;line-height:.82}
-.hero h1 em{font-style:normal;color:var(--sun);display:block}
-.hero .when{display:flex;flex-wrap:wrap;gap:12px 32px;margin:28px 0 32px;font-size:18px}
-.hero .when b{display:block;font-family:var(--display);font-size:34px;font-weight:800;line-height:1}
-.count{display:flex;gap:10px;margin-bottom:32px}
-.count div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:10px;padding:10px 14px;min-width:78px;text-align:center}
-.count b{display:block;font-family:var(--display);font-size:40px;font-weight:800;line-height:1;font-variant-numeric:tabular-nums}
-.count span{font-size:12px;letter-spacing:.1em;text-transform:uppercase;opacity:.75}
-.cta{display:flex;flex-wrap:wrap;gap:12px}
-
-/* griglie */
-.grid{display:grid;gap:16px}
-.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
-.g4{grid-template-columns:repeat(4,minmax(0,1fr))}
-.card{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:22px}
-section.alt .card{background:var(--bg)}
-section:not(.alt) .card{background:var(--surface)}
-.card p{margin:0;color:var(--soft)}
-.big{font-family:var(--display);font-size:56px;font-weight:900;line-height:1;color:var(--pool);font-variant-numeric:tabular-nums}
-
-/* formato a tabellone */
-.bracket{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin:8px 0 28px;border:2px solid var(--pool);border-radius:12px;overflow:hidden}
-.bracket div{padding:18px;border-right:1px dashed var(--line)}
-.bracket div:last-child{border-right:none;background:rgba(14,110,126,.08)}
-.bracket b{font-family:var(--display);font-size:24px;display:block}
-.bracket span{font-size:14px;color:var(--soft)}
-.rules{columns:2;column-gap:40px;padding-left:20px;margin:0}
-.rules li{margin-bottom:10px;break-inside:avoid}
-
-/* programma */
-.timeline{list-style:none;margin:0;padding:0;border-left:3px solid var(--pool)}
-.timeline li{position:relative;padding:0 0 22px 24px}
-.timeline li::before{content:"";position:absolute;left:-9px;top:6px;width:15px;height:15px;border-radius:50%;background:var(--sun);border:3px solid var(--bg)}
-.timeline time{font-family:var(--display);font-weight:800;font-size:24px;display:block;line-height:1.1}
-.timeline p{margin:2px 0 0;color:var(--soft)}
-
-/* quote */
-.price{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-.price .card .big{color:var(--ink)}
-.price ul{margin:12px 0 0;padding-left:18px;color:var(--soft)}
-
-.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
-.g5{grid-template-columns:repeat(5,minmax(0,1fr))}
-.pay{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;margin-top:16px;padding:18px 20px;border:1px dashed var(--pool);border-radius:12px}
-.pay p{margin:0;color:var(--soft);font-size:14px;max-width:60ch}
-
-/* caroselli */
-.car-title{margin:44px 0 14px}
-.carousel{position:relative}
-.track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:10px;scrollbar-width:thin}
-.slide{flex:0 0 min(78%,520px);margin:0;scroll-snap-align:start;border-radius:12px;overflow:hidden;background:var(--surface);border:1px solid var(--line)}
-.slide img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover}
-.carousel.tall .slide{flex-basis:min(62%,300px)}
-.carousel.tall .slide img{aspect-ratio:9/14}
-.slide figcaption{padding:10px 14px;font-size:14px;color:var(--soft)}
-.slide figcaption b{color:var(--ink)}
-.slide.placeholder .ph{aspect-ratio:3/2;display:grid;place-items:center;text-align:center;padding:20px;color:var(--soft);background:repeating-linear-gradient(135deg,transparent 0 12px,rgba(14,110,126,.07) 12px 24px)}
-.car-nav{display:flex;gap:8px;justify-content:flex-end;margin-top:6px}
-.car-nav button{font:inherit;font-size:22px;line-height:1;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
-.car-nav button:hover{border-color:var(--pool)}
-
-/* sponsor: scorrimento continuo */
-.marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
-.marquee-track{display:flex;width:max-content;animation:scroll 28s linear infinite}
-.marquee:hover .marquee-track{animation-play-state:paused}
-.logos{display:flex;gap:18px;padding-right:18px}
-.logo{display:block;width:200px;height:120px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 16px}
-.logo img{display:block;width:100%;height:100%;object-fit:contain}
-@keyframes scroll{to{transform:translateX(-50%)}}
-
-/* sponsor */
-.sponsors{display:flex;flex-wrap:wrap;gap:10px}
-.sponsors span{border:1px solid var(--line);border-radius:999px;padding:10px 18px;font-weight:500;background:var(--surface)}
-
-/* iscrizioni */
-.signup{background:var(--pool);color:#fff;border-radius:16px;padding:40px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
-.signup h2{margin:0}
-.signup p{margin:8px 0 0;max-width:52ch;opacity:.92}
-
-footer{background:var(--deep);color:var(--on-deep);padding-block:40px;font-size:14px}
-footer .wrap{display:flex;flex-wrap:wrap;gap:16px 40px;justify-content:space-between}
-footer a{opacity:.9}
-
-@media (max-width:860px){
-  .g3,.g4{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .g5{grid-template-columns:repeat(3,minmax(0,1fr))}
-  .bracket{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .bracket div:nth-child(2){border-right:none}
-  .bracket div:nth-child(-n+2){border-bottom:1px dashed var(--line)}
-  .rules{columns:1}
-  nav.top ul{display:none}
-  .menu{display:block}
-  nav.top.open ul{display:flex;flex-direction:column;position:absolute;top:56px;left:0;right:0;background:var(--deep);padding:12px max(16px,env(safe-area-inset-left,0px)) 20px;gap:14px}
-  nav.top .btn{display:none}
-}
-@media (max-width:520px){
-  .g2,.g3,.g4,.price{grid-template-columns:1fr}
-  .g5{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .g5 .card:last-child{grid-column:1/-1}
-  .signup{padding:28px 20px}
-  section{padding-block:56px}
-}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.track{scroll-behavior:auto}.marquee-track{animation:none}}
-</style>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -177,186 +17,95 @@ footer a{opacity:.9}
 
 <nav class="top" id="nav" aria-label="Menu principale">
   <div class="wrap">
-    <a class="brand" href="#top">WLA <span>CUP</span></a>
+    <a class="brand wm" href="#top"><span class="un">UN</span>DRAFTED</a>
     <button class="menu" id="menu" aria-expanded="false" aria-controls="menu-list">Menu</button>
     <ul id="menu-list">
-      <li><a href="#torneo">Il torneo</a></li>
-      <li><a href="#programma">Programma</a></li>
-      <li><a href="#quote">Quote</a></li>
-      <li><a href="#extra">Non solo basket</a></li>
-      <li><a href="#dove">Dove siamo</a></li>
+      <li><a href="#tappe">Tappe 2027</a></li>
+      <li><a href="#formato">Il formato</a></li>
+      <li><a href="#numeri">Numeri</a></li>
       <li><a href="#sponsor">Sponsor</a></li>
       <li><a href="#contatti">Contatti</a></li>
     </ul>
-    <a class="btn" href="#iscrizioni">Iscriviti</a>
+    <a class="btn" href="wla.html#iscrizioni">Iscriviti</a>
   </div>
 </nav>
 
 <header class="hero" id="top">
-  <div class="hero-bg" aria-hidden="true"><img src="img/2026/foto-01.jpg" alt="" class="on"><img src="img/2026/foto-04.jpg" alt=""><img src="img/2026/foto-05.jpg" alt=""><img src="img/2026/foto-06.jpg" alt=""><img src="img/2026/foto-02.jpg" alt=""><img src="img/2025/foto-01.jpg" alt=""><img src="img/2025/foto-05.jpg" alt=""><img src="img/2025/foto-08.jpg" alt=""></div>
+  <div class="hero-bg" aria-hidden="true"><img src="img/2026/foto-01.jpg" alt="" class="on"><img src="img/2026/foto-04.jpg" alt=""><img src="img/2025/foto-01.jpg" alt=""><img src="img/2026/foto-05.jpg" alt=""><img src="img/2026/foto-06.jpg" alt=""><img src="img/2025/foto-05.jpg" alt=""></div>
   <div class="wrap">
-    <p class="kicker">Terza edizione · Torneo di basket 3v3</p>
-    <h1>WLA Cup <em>2027</em></h1>
-    <div class="when">
-      <div><b>Sab 12 giugno</b><span class="tbd">giornata da confermare</span></div>
-      <div><b>WLA</b>piscina, chioschi e campo all’aperto</div>
-      <div><b>16 squadre</b>da 3 a 5 giocatori</div>
-    </div>
-    <div class="count" id="count" aria-label="Conto alla rovescia">
-      <div><b id="cd-d">–</b><span>giorni</span></div>
-      <div><b id="cd-h">–</b><span>ore</span></div>
-      <div><b id="cd-m">–</b><span>minuti</span></div>
-    </div>
+    <p class="kicker">Circuito amatoriale di basket 3v3</p>
+    <h1 class="wm" style="font-size:clamp(44px,11.5vw,160px)"><span class="un">UN</span>DRAFTED<small>since 2025</small></h1>
+    <p><span class="tbd">logo provvisorio: da sostituire con il logo definitivo</span></p>
+    <p style="font-size:19px;max-width:44ch;margin:24px 0 30px">Per chi non è mai stato scelto al draft ma non smette di giocare. Più tappe, stesse regole, una giornata intera di basket, piscina e chioschi. <span class="tbd" style="font-size:14px">slogan da valutare</span></p>
     <div class="cta">
-      <a class="btn" href="#iscrizioni">Iscrivi la tua squadra</a>
-      <a class="btn ghost" href="#torneo">Come funziona</a>
+      <a class="btn" href="#tappe">Le tappe 2027</a>
+      <a class="btn ghost" href="wla.html">Tappa WLA · 12 giugno</a>
     </div>
   </div>
 </header>
 
-<section id="torneo">
+<section id="tappe">
   <div class="wrap">
-    <p class="kicker">Il torneo</p>
-    <h2>Poco basket, tanto divertimento</h2>
-    <p class="lead">Un giorno intero di 3v3 a metà campo, con pranzo, piscina e chioschi. Tutte le squadre arrivano agli ottavi: chi vince va nei Bravi, chi perde gioca nei Belli. Nessuno torna a casa dopo la mattina.</p>
-    <div class="bracket" role="list" aria-label="Fasi del torneo">
+    <p class="kicker">Stagione 2027</p>
+    <h2>Le tappe</h2>
+    <p class="lead">Ogni tappa è un torneo da 16 squadre in una giornata <span class="tbd">da confermare per tutte le tappe</span>. Il calendario completo arriva nei prossimi mesi.</p>
+    <div class="tappe">
+      <article class="tappa">
+        <img src="img/wla/piscina-wla.jpg" alt="Il WLA visto dall’alto, con la piscina e il prato">
+        <div class="body">
+          <span class="num">Tappa 1 · WLA Cup, terza edizione</span>
+          <h3>WLA · Premariacco</h3>
+          <p><strong style="color:var(--ink)">Sabato 12 giugno 2027</strong> <span class="tbd">da confermare</span></p>
+          <p>Piscina, chioschi e la Coppa Chiosco. Dove tutto è cominciato.</p>
+          <a class="btn" href="wla.html">Scopri la tappa</a>
+        </div>
+      </article>
+      <article class="tappa">
+        <div class="ph">Prossimamente</div>
+        <div class="body">
+          <span class="num">Tappa 2</span>
+          <h3>Luogo da annunciare</h3>
+          <p><span class="tbd">data e luogo da definire</span></p>
+          <p>Stiamo lavorando a una seconda tappa con una nuova realtà del territorio. Seguici su Instagram per saperlo per primo.</p>
+          <a class="btn ghost" style="color:var(--pool)" href="https://www.instagram.com/wlacup/" target="_blank" rel="noopener">Seguici su Instagram</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="formato">
+  <div class="wrap">
+    <p class="kicker">Il formato</p>
+    <h2>Stesse regole in ogni tappa</h2>
+    <div class="bracket" role="list" aria-label="Fasi di ogni tappa">
       <div role="listitem"><b>Gironi</b><span>4 gironi da 4 squadre, 3 partite garantite</span></div>
       <div role="listitem"><b>Ottavi</b><span>Tutte le 16 squadre, incroci in base al girone</span></div>
       <div role="listitem"><b>Bravi</b><span>Le 8 vincenti: quarti, semifinali e finali</span></div>
       <div role="listitem"><b>Belli</b><span>Le 8 sconfitte: un tabellone tutto loro</span></div>
     </div>
-    <h3>Le regole che ci rendono diversi</h3>
     <ul class="rules">
-      <li><strong>Partite da 8 minuti</strong> (10 nelle fasi finali), ultimi 2–3 minuti a tempo effettivo; si chiude a 16 o 21 punti.</li>
-      <li><strong>1 punto</strong> dentro l’arco, <strong>2 punti</strong> fuori.</li>
       <li><strong>Quota rosa:</strong> i canestri delle giocatrici valgono +1.</li>
       <li><strong>Ankle breaker:</strong> fai cadere il difensore e segni? +1.</li>
-      <li><strong>1W1:</strong> una volta a partita il capitano chiama la sfida uno contro uno, vale 3 punti.</li>
-      <li><strong>Palla contesa:</strong> niente possesso alternato, decide chi finisce prima una birra piccola.</li>
+      <li><strong>1W1:</strong> una sfida uno contro uno a partita, vale 3 punti.</li>
+      <li><strong>Palla contesa:</strong> decide chi finisce prima una birra piccola.</li>
     </ul>
     <p style="margin-top:20px"><a href="https://drive.google.com/file/d/1bDFdglPlYdbzx42nmn8Edi-oRGehAQQ-/view?usp=drive_link" target="_blank" rel="noopener">Regolamento completo (PDF)</a></p>
   </div>
 </section>
 
-<section class="alt" id="programma">
-  <div class="wrap">
-    <p class="kicker">Programma della giornata</p>
-    <h2>Dalla brioche alla premiazione</h2>
-    <p class="lead">Orari indicativi, <span class="tbd">da confermare</span> con il calendario definitivo.</p>
-    <ol class="timeline">
-      <li><time>9:00</time><p>Accoglienza, consegna dei pacchi gara e brioches del Panificio del Foro.</p></li>
-      <li><time>9:30</time><p>Inizio dei gironi: 3 partite garantite per ogni squadra.</p></li>
-      <li><time>12:30 – 15:30</time><p>Pranzo e piscina.</p></li>
-      <li><time>15:30</time><p>Ottavi di finale, poi i tabelloni dei Bravi e dei Belli.</p></li>
-      <li><time>19:00</time><p>Finali e assegnazione della Coppa Chiosco.</p></li>
-      <li><time>19:30</time><p>Premiazioni, MVP e festa a bordo piscina.</p></li>
-    </ol>
-  </div>
-</section>
-
-<section id="quote">
-  <div class="wrap">
-    <p class="kicker">Quote</p>
-    <h2>Cosa paghi, cosa ricevi</h2>
-    <div class="price">
-      <div class="card">
-        <h3>Giocatore</h3>
-        <div class="big">20 €<span class="tbd" style="font-size:14px;font-family:var(--body);font-weight:500;vertical-align:middle;margin-left:8px">20–22 €</span></div>
-        <ul><li>Torneo e assicurazione</li><li>Canotta ufficiale</li><li>Pranzo e acqua</li><li>Ingresso in piscina</li></ul>
-      </div>
-      <div class="card">
-        <h3>Accompagnatore</h3>
-        <div class="big">10 €</div>
-        <ul><li>Ingresso in piscina</li><li>Mini-giochi a bordo campo</li></ul>
-      </div>
-    </div>
-    <div class="pay">
-      <p>La quota si paga per tutta la squadra al momento dell’iscrizione, con PayPal. L’iscrizione vale solo a pagamento ricevuto. Nella causale scrivi il nome della squadra.</p>
-      <a class="btn" href="https://www.paypal.me/WLACUP" target="_blank" rel="noopener">Paga con PayPal</a>
-    </div>
-  </div>
-</section>
-
-<section class="alt" id="extra">
-  <div class="wrap">
-    <p class="kicker">Non solo basket</p>
-    <h2>Il resto della giornata</h2>
-    <div class="grid g2">
-      <div class="card"><h3>Beach volley</h3><p>Un torneo a parte per 6 squadre sul campo da beach.</p></div>
-      <div class="card"><h3>Coppa Chiosco</h3><p>Il premio più ambito: va alla squadra più assetata.</p></div>
-    </div>
-  </div>
-</section>
-
 <section id="numeri">
   <div class="wrap">
-    <p class="kicker">Le edizioni passate</p>
-    <h2>I numeri della WLA Cup</h2>
+    <p class="kicker">Dal 2025 a oggi</p>
+    <h2>Due edizioni, tanti numeri</h2>
     <div class="grid g5">
+      <div class="card"><div class="big">2</div><p>edizioni giocate al WLA</p></div>
       <div class="card"><div class="big">70</div><p>atleti iscritti nel 2026</p></div>
-      <div class="card"><div class="big">110</div><p>persone in totale con la piscina</p></div>
-      <div class="card"><div class="big">47</div><p>partite giocate in una giornata</p></div>
+      <div class="card"><div class="big">47</div><p>partite in una giornata</p></div>
       <div class="card"><div class="big">851</div><p>punti segnati in una giornata</p></div>
       <div class="card"><div class="big">65k</div><p>visualizzazioni su Instagram</p></div>
     </div>
-
-    <h3 class="car-title">Albo d’oro</h3>
-    <div class="carousel" data-carousel aria-label="Foto dei vincitori">
-      <div class="track">
-        <figure class="slide"><img src="img/vincitori/vincitori-2026-01.jpg" alt="Premiazione WLA Cup 2026: squadra esulta con coppa e premi insieme agli organizzatori" loading="lazy"><figcaption><b>2026</b> · Coppa <span class="tbd">I bambini di Bob Marley? da confermare</span></figcaption></figure>
-        <figure class="slide"><img src="img/vincitori/vincitori-2026-02.jpg" alt="Premiazione WLA Cup 2026: quattro giocatori in posa con i premi degli sponsor" loading="lazy"><figcaption><b>2026</b> · Premiazione <span class="tbd">categoria da confermare</span></figcaption></figure>
-        <figure class="slide"><img src="img/vincitori/vincitori-2026-03.jpg" alt="Premiazione WLA Cup 2026: quattro ragazzi con panettone e premi" loading="lazy"><figcaption><b>2026</b> · Premiazione <span class="tbd">categoria da confermare</span></figcaption></figure>
-        <figure class="slide"><img src="img/vincitori/vincitori-2026-04.jpg" alt="Premiazione WLA Cup 2026: giocatore con una piccola coppa dorata e una confezione regalo" loading="lazy"><figcaption><b>2026</b> · Premio individuale <span class="tbd">MVP?</span></figcaption></figure>
-        <figure class="slide"><img src="img/vincitori/vincitori-2026-05.jpg" alt="Premiazione WLA Cup 2026: una giocatrice e un giocatore ricevono i premi" loading="lazy"><figcaption><b>2026</b> · Premiazione <span class="tbd">categoria da confermare</span></figcaption></figure>
-        <figure class="slide"><img src="img/vincitori/vincitori-2025-01.jpg" alt="Premiazione WLA Cup 2025: quattro giocatori sollevano la coppa e i premi sotto il gazebo" loading="lazy"><figcaption><b>2025</b> · Coppa <span class="tbd">squadra da confermare</span></figcaption></figure>
-        <figure class="slide"><img src="img/vincitori/vincitori-2025-02.jpg" alt="Premiazione WLA Cup 2025: quattro giocatori in posa con la coppa, i buoni e i premi degli sponsor" loading="lazy"><figcaption><b>2025</b> · Coppa</figcaption></figure>
-        <figure class="slide"><img src="img/vincitori/vincitori-2025-03.jpg" alt="Premiazione WLA Cup 2025: squadra Team Fatecivederequalcosa in posa sul campo con i premi" loading="lazy"><figcaption><b>2025</b> · Team Fatecivederequalcosa <span class="tbd">categoria da confermare</span></figcaption></figure>
-        <figure class="slide"><img src="img/vincitori/vincitori-2025-04.jpg" alt="Premiazione WLA Cup 2025: squadra Team Fatecivederequalcosa sotto il gazebo con i premi" loading="lazy"><figcaption><b>2025</b> · Team Fatecivederequalcosa</figcaption></figure>
-        <figure class="slide"><img src="img/vincitori/vincitori-2025-05.jpg" alt="Premiazione WLA Cup 2025: tre ragazzi sorridenti con panettone e premi" loading="lazy"><figcaption><b>2025</b> · Premiazione <span class="tbd">Coppa Chiosco?</span></figcaption></figure>
-        <figure class="slide"><img src="img/vincitori/vincitori-2025-06.jpg" alt="Premiazione WLA Cup 2025: giocatore con un premio accanto al presentatore" loading="lazy"><figcaption><b>2025</b> · Premio individuale <span class="tbd">MVP?</span></figcaption></figure>
-      </div>
-      <div class="car-nav"><button type="button" data-prev aria-label="Foto precedente">‹</button><button type="button" data-next aria-label="Foto successiva">›</button></div>
-    </div>
-
-
-    <h3 class="car-title">Maglie e shooting</h3>
-    <div class="carousel tall" data-carousel aria-label="Foto dello shooting con le maglie">
-      <div class="track">
-        <figure class="slide"><img src="img/shooting/shooting-01.jpg" alt="Tre ragazzi a bordo piscina con la maglia rossa della 2ª WLA Cup" loading="lazy"></figure>
-        <figure class="slide"><img src="img/shooting/shooting-02.jpg" alt="Ragazza e ragazzo in maglia rossa, lui di spalle mostra i loghi degli sponsor" loading="lazy"></figure>
-        <figure class="slide"><img src="img/shooting/shooting-03.jpg" alt="Due ragazze in maglia rossa con un pallone da basket" loading="lazy"></figure>
-        <figure class="slide"><img src="img/shooting/shooting-04.jpg" alt="Ragazza su un lettino con un pallone, fotografata con una macchina istantanea" loading="lazy"></figure>
-        <figure class="slide"><img src="img/shooting/shooting-05.jpg" alt="Ragazza in posa sotto un ombrellone di paglia" loading="lazy"></figure>
-      </div>
-      <div class="car-nav"><button type="button" data-prev aria-label="Foto precedente">‹</button><button type="button" data-next aria-label="Foto successiva">›</button></div>
-    </div>
-  </div>
-</section>
-
-<section class="alt" id="iscrizioni">
-  <div class="wrap">
-    <div class="signup">
-      <div>
-        <h2>Iscrizioni</h2>
-        <p>Il capitano iscrive tutta la squadra con un unico modulo: giocatori, taglie delle canotte, certificati medici e modulo piscina. Per i 16–17enni serve l’autorizzazione di un genitore.</p>
-        <p><span class="tbd" style="color:#1B1400">Apertura iscrizioni: marzo 2027</span></p>
-      </div>
-      <div class="cta">
-        <a class="btn" href="https://form.jotform.com/251352451014343" target="_blank" rel="noopener">Modulo d’iscrizione</a>
-        <a class="btn ghost" href="https://www.paypal.me/WLACUP" target="_blank" rel="noopener">Paga con PayPal</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="dove">
-  <div class="wrap">
-    <p class="kicker">Dove siamo</p>
-    <h2>Al WLA</h2>
-    <div class="grid g2">
-      <div class="card"><h3>Indirizzo</h3><p>WLA · Birreria, Pub &amp; Cucina<br>Via San Paolino 58, 33040 Premariacco (UD)<br><a href="https://ilwla.it/" target="_blank" rel="noopener">ilwla.it</a></p></div>
-      <div class="card"><h3>Come arrivare</h3><p>Accanto al Circolo Borgo San Mauro.<br><a href="https://maps.app.goo.gl/1MfUi6rVia1Dk5mp8" target="_blank" rel="noopener">Apri in Google Maps</a></p></div>
-    </div>
+    <p style="margin-top:20px"><a href="wla.html#numeri">Albo d’oro e foto delle edizioni al WLA</a></p>
   </div>
 </section>
 
@@ -364,7 +113,7 @@ footer a{opacity:.9}
   <div class="wrap">
     <p class="kicker">Grazie a</p>
     <h2>Gli sponsor</h2>
-    <p class="lead">Le realtà del territorio che rendono possibile il torneo. <span class="tbd">sponsor 2026, da aggiornare per il 2027</span></p>
+    <p class="lead">Le realtà del territorio che rendono possibile il circuito. <span class="tbd">sponsor 2026, da aggiornare per il 2027</span></p>
     <div class="marquee" aria-label="Loghi degli sponsor">
       <div class="marquee-track">
         <div class="logos">
@@ -385,58 +134,28 @@ footer a{opacity:.9}
         </div>
       </div>
     </div>
-    <div class="sponsors" style="margin-top:18px"><span>DACOS</span><span>Romagna Coppe</span></div>
+    <p style="margin-top:18px;color:var(--soft)">Vuoi sostenere una tappa? Scrivici a wlacup3x3@gmail.com. <span class="tbd">nuova email UNDRAFTED?</span></p>
   </div>
 </section>
 
 <footer id="contatti">
   <div class="wrap">
     <div>
-      <div class="brand">WLA <span>CUP</span></div>
-      <p style="margin:6px 0 0;opacity:.8">Torneo amatoriale di basket 3v3, carattere non agonistico.</p>
+      <div class="brand wm"><span class="un">UN</span>DRAFTED</div>
+      <p style="margin:6px 0 0;opacity:.8">Circuito amatoriale di basket 3v3, carattere non agonistico.</p>
     </div>
     <div>
       <strong>Contatti</strong><br>
       Email: wlacup3x3@gmail.com<br>
-      Instagram: <a href="https://www.instagram.com/wlacup/">@wlacup</a>
+      Instagram: <a href="https://www.instagram.com/wlacup/">@wlacup</a> <span class="tbd">nuovo profilo?</span>
     </div>
     <div>
       <a href="privacy.html">Privacy</a> · <a href="https://drive.google.com/file/d/1XRMhdXn3V_hUz1txnLg-YR7DdlMqkDQf/view?usp=drive_link" target="_blank" rel="noopener">Termini e condizioni</a><br>
-      <span style="opacity:.7">© 2027 WLA Cup</span>
+      <span style="opacity:.7">© 2027 UNDRAFTED</span> <span class="tbd">titolare e dati legali</span>
     </div>
   </div>
 </footer>
 
-<script>
-(function(){
-  var target=new Date('2027-06-12T09:30:00+02:00').getTime();
-  function tick(){
-    var ms=Math.max(0,target-Date.now());
-    var d=Math.floor(ms/864e5),h=Math.floor(ms%864e5/36e5),m=Math.floor(ms%36e5/6e4);
-    document.getElementById('cd-d').textContent=d;
-    document.getElementById('cd-h').textContent=h;
-    document.getElementById('cd-m').textContent=m;
-  }
-  tick(); setInterval(tick,30000);
-  var nav=document.getElementById('nav'),btn=document.getElementById('menu');
-  btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o)});
-  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  document.querySelectorAll('[data-carousel]').forEach(function(c){
-    var t=c.querySelector('.track');
-    function step(){var s=t.querySelector('.slide');return s?s.getBoundingClientRect().width+14:300}
-    c.querySelector('[data-prev]').addEventListener('click',function(){t.scrollBy({left:-step()})});
-    function next(){ if(t.scrollLeft+t.clientWidth>=t.scrollWidth-4){t.scrollTo({left:0})}else{t.scrollBy({left:step()})} }
-    c.querySelector('[data-next]').addEventListener('click',next);
-    var paused=false;
-    ['mouseenter','touchstart','focusin'].forEach(function(e){c.addEventListener(e,function(){paused=true},{passive:true})});
-    ['mouseleave','focusout'].forEach(function(e){c.addEventListener(e,function(){paused=false})});
-    c.addEventListener('touchend',function(){setTimeout(function(){paused=false},4000)},{passive:true});
-    if(!reduce) setInterval(function(){ if(!paused && !document.hidden) next(); },3500);
-  });
-  var bgs=document.querySelectorAll('.hero-bg img'),bi=0;
-  if(bgs.length>1 && !reduce) setInterval(function(){ bgs[bi].classList.remove('on'); bi=(bi+1)%bgs.length; bgs[bi].classList.add('on'); },5000);
-  document.querySelectorAll('#menu-list a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');btn.setAttribute('aria-expanded','false')})});
-})();
-</script>
+<script src="js/main.js"></script>
 </body>
 </html>
